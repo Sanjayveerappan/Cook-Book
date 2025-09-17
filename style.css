@@ -1,0 +1,144 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("pexels-roman-odintsov-4551832.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/*  Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #ffcc70;
+}
+
+#searchBox {
+  width: 80%;
+  max-width: 450px;
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* Main container */
+.container {
+  max-width: 700px;
+  margin: 140px auto 40px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Headings */
+h2 {
+  margin-top: 20px;
+  color: #ffd280;
+  text-align: center;
+}
+
+/*  Form */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  background: #ff8c00;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e67600;
+}
+
+/*  Recipe list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  animation: fadeIn 0.5s ease-in;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+li div {
+  flex: 1;
+}
+
+li button {
+  background: #ff4d4d;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background: #e60000;
+}
+
+/* Empty message */
+.empty {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+  #searchBox {
+    width: 95%;
+  }
+  .container {
+    margin: 120px 15px 30px;
+  }
+}

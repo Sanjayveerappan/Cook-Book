@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cook Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>🍴 Cook Book</h1>
+    <input type="text" id="searchBox" placeholder="🔍 Search recipes...">
+  </div>
+
+  <!-- Main container -->
+  <div class="container">
+    <div class="form">
+      <input type="text" id="title" placeholder="Recipe Title">
+      <textarea id="ingredients" placeholder="Ingredients"></textarea>
+      <textarea id="instructions" placeholder="Instructions"></textarea>
+      <button onclick="addRecipe()">Save Recipe</button>
+    </div>
+
+    <h2>My Recipes</h2>
+    <ul id="recipeList"></ul>
+    <p id="emptyMsg" class="empty">No recipes yet. Add your first one! 🍳</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
