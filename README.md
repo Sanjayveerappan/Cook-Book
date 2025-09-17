@@ -26,6 +26,6 @@ Users can add, search, and delete recipes, all stored in **localStorage**.
 
 ## 🌐 Live Demo
 
-👉 [Cook Book on GitHub Pages](https://YOUR_USERNAME.github.io/Cook-Book/)
+👉 [Cook Book on GitHub Pages](https://sanjayveerappan.github.io/Cook-Book/)
 
 ---
